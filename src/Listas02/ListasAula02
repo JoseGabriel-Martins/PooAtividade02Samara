@@ -1,0 +1,30 @@
+1) Suponha que você esteja criando um app para anotar os pedidos
+dos clientes em um restaurante. Seu app precisa de uma lista de
+pedidos. Os garçons adicionam os pedidos a essa lista e os chefes os
+retiram da lista. Os garçons colocam os pedidos no final da lista e os
+chefes retiram os pedidos do começo dela para cozinhá-los.
+Você usaria um array ou uma lista encadeada para implementar o app?
+Justifique.
+
+R= Eu usaria lista encadeada. Nesse caso, os garçons sempre adicionam pedidos no final e os chefes removem no começo. Se fosse um array, cada remoção no início obrigaria a deslocar todos os outros elementos para frente, o que deixaria o processo mais lento. Já na lista encadeada, dá pra remover o primeiro elemento e atualizar o ponteiro pro próximo de forma rápida, além de inserir no final sem precisar ficar movendo dados na memória.
+
+2) Imagine que o Instagram guarda uma lista de usuários. Quando
+alguém tenta acessá-lo, uma busca é feita pelo nome de usuário. Se o
+nome da pessoas está na lista, ela pode continuar o acesso. As
+pessoas usam o Instagram com muita frequência, então existem muitas
+buscas nessa lista.
+
+Presuma que o Instagram use um algoritmo de busca que requer
+acesso aleatório, sendo que é necessário ser capaz de acessar o meio
+da lista de nomes instantaneamente. Sabendo disso, você
+implementaria essa lista usando um array ou uma lista encadeada?
+
+R= Nesse caso eu usaria um array. Como o algoritmo precisa acessar posições aleatórias (tipo pegar direto o meio da lista), o array é mais indicado porque permite acesso direto pelo índice, sem precisar percorrer os elementos anteriores. Já numa lista encadeada, pra chegar no meio seria preciso andar nó por nó, o que deixaria a busca mais demorada.
+
+3) As pessoas se inscrevem no Instagram com muita frequência.
+Suponha que você decida usar um array para armazenar a lista de
+usuários. Quais as desvantagens de um array em relação às
+inserções? O que acontece quando você adiciona novos usuários em
+um array?
+
+R= A desvantagem do array é que ele tem tamanho fixo. Então, quando novos usuários entram, se o array já estiver cheio, o sistema precisa criar um novo array maior e copiar todos os dados antigos para ele, o que gera custo extra de tempo e memória. Além disso, inserir no meio do array também é ruim, porque é necessário deslocar os elementos seguintes para abrir espaço.
